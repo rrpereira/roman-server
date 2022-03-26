@@ -9,7 +9,7 @@ http://localhost:8080/romannumeral?min={integer}&max={integer}
 
 The requirements are the following:
 
-- {integer} must be an $$x$$ such that $x \in \mathbb{N} : x \in [1,3999] $;
+- {integer} must be an integer in the range [1, 3999];
 - errors can be returned in plain text format;
 - for the first URL, the response to a valid input must be a JSON object with two string values, an 'input' and an 'output'. Output example for route [http://localhost:8080/romannumeral?query=8](http://localhost:8080/romannumeral?query=8):
 
@@ -119,7 +119,7 @@ If not, it checks if it has a range of values to convert with `rangeIsValid`.
 
 Otherwise, it returns a JSON object containing an error message.
 
-Function `arabicToRoman` contains the most important logic of the server. The only argument of this function is the value to be converted, passed as a `string`. To make this process asynchronous, this function returns a `Promisse`, which in turn returns an object (with the original and the converted value) and stores it in the correct position in the array `results`. With this, the server can process value `4` before processing `2`, or `5` before `1`, in the range $[1,5]$, for example.
+Function `arabicToRoman` contains the most important logic of the server. The only argument of this function is the value to be converted, passed as a `string`. To make this process asynchronous, this function returns a `Promisse`, which in turn returns an object (with the original and the converted value) and stores it in the correct position in the array `results`. With this, the server can process value `4` before processing `2`, or `5` before `1`, in the range [1,5], for example.
 
 The algorithm of this function is not the best nor the cleanest out there, yet I decided to apply the one that I have thought about because it was one of the rules of the project. Nevertheless, in normal circumstances I would apply the best solution possible. Now, lets break down the core of this function:
 
@@ -127,10 +127,10 @@ The algorithm of this function is not the best nor the cleanest out there, yet I
 - `numeral` stores the resulting roman numeral;
 - The for loop iterates over each digit of that number, starting in the most significant one. At the same time, it iterates through `symbols` in descending order.
 - Finally, the current `digit` falls in one of the following cases:
-  - $digit \in [1,4[$ -> concatenates `symbols[j].value` to the resulting string `digit` times;
-  - $digit = 4$ -> the conversion is immediate with `symbols[j].half`;
-  - $digit \in ]5,9]$ -> concatenates `symbols[j].half`, and then concatenates `symbols[j].value` to the resulting string `digit - 5` times;
-  - $digit = 9$ -> concatenates `symbols[j].value` and `symbols[j+1].value` to the resulting string.
+  - belongs to range [1,4[ -> concatenates `symbols[j].value` to the resulting string `digit` times;
+  - is equal to 4 -> the conversion is immediate with `symbols[j].half`;
+  - belongs to range [5,9[ -> concatenates `symbols[j].half`, and then concatenates `symbols[j].value` to the resulting string `digit - 5` times;
+  - is equal to 9 -> concatenates `symbols[j].value` and `symbols[j+1].value` to the resulting string.
 
 At the end of the loop, `numeral` has the converted roman numeral.
 
@@ -139,7 +139,7 @@ Function `numberIsValid` checks if:
 - the `query` parameter exists;
 - the query has one parameter;
 - `qwery` parameter only has digits;
-- the value belongs to the range $[1,3999]$.
+- the value belongs to range [1,3999].
 
 Function `rangeIsValid` checks if:
 
@@ -148,7 +148,7 @@ Function `rangeIsValid` checks if:
 - the query has two parameters;
 - `min` parameter only has digits;
 - `max` parameter only has digits;
-- the values belong to the range $[1,3999]$;
+- the values belong to range [1,3999];
 - `min` parameter is not equal nor greater than `max`.
 
 ### [server.test.js](/server.test.js)
