@@ -37,7 +37,7 @@ The requirements are the following:
 
 ## Tools
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/260px-Unofficial_JavaScript_logo_2.svg.png" width="100" height="100">&nbsp;&nbsp;&nbsp;&nbsp;[<img src="https://avatars.githubusercontent.com/u/9950313?s=200&v=4" width="100" height="100">](https://nodejs.org/)<img src="https://www.google.com/search?q=npm&tbm=isch&ved=2ahUKEwjUy9uYq-L2AhVmif0HHeirBH8Q2-cCegQIABAA&oq=npm&gs_lcp=CgNpbWcQAzIHCCMQ7wMQJzIHCCMQ7wMQJzIFCAAQgAQyBQgAEIAEMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgQIABAeOgQIABAYUI4EWMcKYIQNaABwAHgAgAF0iAH3BZIBAzAuN5gBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=tEU-YtShBOaS9u8P6NeS-Ac&bih=912&biw=960#imgrc=47ie_e0mINyxvM&imgdii=mjcFGa2lqvyZdM" width="100" height="100">&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/260px-Unofficial_JavaScript_logo_2.svg.png" width="100" height="100">&nbsp;&nbsp;&nbsp;&nbsp;[<img src="https://avatars.githubusercontent.com/u/9950313?s=200&v=4" width="100" height="100">](https://nodejs.org/)<img src="https://user-images.githubusercontent.com/36520545/160258654-67dafbd2-8c15-4dc7-8530-a174c773a623.gif" width="100" height="100">&nbsp;&nbsp;&nbsp;&nbsp;
 
 - Node.js: v17.8.0
 - Node Package Manager (npm): version 8.5.5
