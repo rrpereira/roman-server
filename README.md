@@ -9,7 +9,7 @@ http://localhost:8080/romannumeral?min={integer}&max={integer}
 
 The requirements are the following:
 
-- {integer} must be an $x$ such that $x \in \mathbb{N} : x \in [1,3999] $;
+- {integer} must be an $$x$$ such that $x \in \mathbb{N} : x \in [1,3999] $;
 - errors can be returned in plain text format;
 - for the first URL, the response to a valid input must be a JSON object with two string values, an 'input' and an 'output'. Output example for route [http://localhost:8080/romannumeral?query=8](http://localhost:8080/romannumeral?query=8):
 
@@ -86,6 +86,7 @@ roman-server
 │   │   └── router.js
 │   └── services
 │       └── services.js
+├── .gitignore
 ├── app.js
 ├── package-lock.json
 ├── package.json
