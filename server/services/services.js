@@ -30,7 +30,7 @@ exports.toRoman = (req, res) => {
 };
 
 /**
- * @description Asynchronous function that convert an arabic to a roman numeral.
+ * @description Asynchronous function that converts an arabic to a roman numeral.
  * @param {String} numberAsString Arabic number to convert.
  * @return {Promise} Promise is converted into an object as soon as it is resolved.
  */
