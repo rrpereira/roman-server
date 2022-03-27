@@ -3,7 +3,7 @@ const route = express.Router();
 const services = require("../services/services");
 
 /**
- * @description Convert a number/range into a roman numeral or a range of roman numberals.
+ * @description Convert a number into a roman numeral or a range of numbers in the corresponding roman numerals.
  * @method GET /romannumeral
  */
 route.get("/romannumeral", services.toRoman);
